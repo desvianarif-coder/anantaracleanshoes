@@ -237,6 +237,59 @@ border-radius:20px;
 box-shadow:0 10px 25px rgba(0,0,0,.1);
 }
 
+/* TESTIMONI */
+
+.testimoni-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+
+.testimoni-card{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+text-align:center;
+transition:.3s;
+}
+
+.testimoni-card:hover{
+transform:translateY(-8px);
+}
+
+.testimoni-card img{
+width:80px;
+height:80px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:15px;
+border:4px solid #004cff;
+}
+
+.testimoni-card p{
+margin:15px 0;
+line-height:1.8;
+color:#555;
+}
+
+.testimoni-card h4{
+color:#004cff;
+margin-top:10px;
+}
+
+.stars{
+color:#FFD700;
+font-size:20px;
+}
+
+@media(max-width:900px){
+.testimoni-grid{
+grid-template-columns:1fr;
+}
+}
+
+    
 /* CONTACT */
 
 .contact-box{
